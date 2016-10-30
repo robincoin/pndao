@@ -62,7 +62,7 @@ public interface UserDao {
 3. 在新编写方法时，按照pndao的方法命名规范即可享受代码生成。
 4. 目前只支持Java 8
 
-使用建议先阅读pndao-example中的样例代码。
+使用前建议先阅读[pndao-example](http://git.oschina.net/piaoniu/pndao/tree/master/pndao-example)中的样例代码。
 
 支持的方法：
 
