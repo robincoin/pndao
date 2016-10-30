@@ -1,7 +1,10 @@
 package com.piaoniu.user.dao;
 
 import com.piaoniu.user.entity.User;
+import org.apache.ibatis.session.RowBounds;
 import org.junit.Test;
+
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -30,5 +33,11 @@ public class UserDaoTest {
 	public void testFindUserById() throws Exception {
 		User user = userDao.findById(USER_ID);
 		assertThat(user).isNotNull();
+	}
+
+	@Test
+	public void testQueryByUserName() throws Exception {
+		List<User> users = userDao.queryByUserName("票牛用户",new RowBounds(0,1));
+		assertThat(users).isNotEmpty();
 	}
 }

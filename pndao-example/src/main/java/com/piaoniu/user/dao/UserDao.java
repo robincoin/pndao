@@ -3,6 +3,10 @@ package com.piaoniu.user.dao;
 import com.piaoniu.common.dao.EntityDao;
 import com.piaoniu.pndao.annotations.DaoGen;
 import com.piaoniu.user.entity.User;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.session.RowBounds;
+
+import java.util.List;
 
 /**
  * @author code4crafter@gmail.com
@@ -11,4 +15,6 @@ import com.piaoniu.user.entity.User;
  */
 @DaoGen
 public interface UserDao extends EntityDao<User> {
+
+	List<User> queryByUserName(@Param("userName") String userName,RowBounds rowBounds);
 }
