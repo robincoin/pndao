@@ -82,7 +82,7 @@ public interface UserDao {
      <tr>
         <td>batchInsert</td>
         <td>批量插入记录</td>
-		 <td>batchInsert(List<User> user)</td>        
+		 <td>batchInsert(List\<User> user)</td>        
         <td>返回插入记录数</td>
     </tr>
     <tr>
@@ -104,6 +104,12 @@ public interface UserDao {
         <td>返回总数</td>
     </tr>
      <tr>
+        <td>update</td>
+        <td>按照主键其他所有列</td>
+		 <td>update(User user)</td>        
+        <td>返回更新记录数</td>
+    </tr>    
+     <tr>
         <td>updateFor</td>
         <td>按照主键更新一列</td>
 		 <td>updateForUserName(String userName,int id)</td>        
@@ -111,4 +117,14 @@ public interface UserDao {
     </tr>
 </table>
 
+## 定制
+
+1. 如果你的团队命名规范与pndao不同，可以下载源码，修改DaoGen的prefix的default值并重新编译。
+2. pndao基于[jsr269](https://www.jcp.org/en/jsr/detail?id=269)的注解编译生成，与lombok的原理是类似的，所以理论上可以为任意框架的生成配置型的代码。
+
+## 反馈
+
+项目目前仍在beta阶段，对于不同版本覆盖不全，欢迎建议、使用和提交代码。
+
+票牛技术团队博客地址：[https://piaoniu.io/](https://piaoniu.io/)。
 
