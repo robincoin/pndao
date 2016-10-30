@@ -16,16 +16,16 @@ import javax.lang.model.SourceVersion;
 import javax.lang.model.element.Element;
 import javax.lang.model.element.ElementKind;
 import javax.lang.model.element.TypeElement;
-import javax.tools.*;
+import javax.tools.StandardLocation;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-@SupportedAnnotationTypes("com.piaoniu.annotations.DaoGen")
+@SupportedAnnotationTypes("com.piaoniu.pndao.annotations.DaoGen")
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 public class DaoGenProcessor  extends AbstractProcessor {
-    public static final String PATH = "com.piaoniu.annotations.DaoGen";
+    public static final String PATH = DaoGen.class.getCanonicalName();
 
     // 工具实例类，用于将CompilerAPI, CompilerTreeAPI和AnnotationProcessing框架粘合起来
     private Trees trees;
