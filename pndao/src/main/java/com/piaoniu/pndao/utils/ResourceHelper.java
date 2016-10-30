@@ -1,4 +1,4 @@
-package com.piaoniu.utils;
+package com.piaoniu.pndao.utils;
 
 import javax.annotation.processing.Filer;
 import javax.tools.FileObject;
@@ -9,7 +9,7 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.util.function.BiConsumer;
 
-import static com.piaoniu.utils.PrintUtils.note;
+import static com.piaoniu.pndao.utils.PrintUtils.note;
 
 public class ResourceHelper {
 

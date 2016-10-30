@@ -1,6 +1,6 @@
-package com.piaoniu.generator.dao;
+package com.piaoniu.pndao.generator.dao;
 
-import com.piaoniu.utils.DaoGenHelper;
+import com.piaoniu.pndao.utils.DaoGenHelper;
 import com.sun.tools.javac.code.Symbol;
 import com.sun.tools.javac.code.Type;
 

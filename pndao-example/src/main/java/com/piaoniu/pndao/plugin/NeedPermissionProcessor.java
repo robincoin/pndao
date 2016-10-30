@@ -1,4 +1,4 @@
-package com.piaoniu.plugin;
+package com.piaoniu.pndao.plugin;
 
 import com.piaoniu.permission.annotations.NeedPermission;
 import com.piaoniu.permission.annotations.NoPermission;

@@ -1,11 +1,11 @@
-package com.piaoniu.utils;
+package com.piaoniu.pndao.utils;
 
 import com.google.common.base.Joiner;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
-import com.piaoniu.annotations.DaoGen;
-import com.piaoniu.generator.dao.DaoEnv;
-import com.piaoniu.generator.dao.MapperMethod;
+import com.piaoniu.pndao.annotations.DaoGen;
+import com.piaoniu.pndao.generator.dao.DaoEnv;
+import com.piaoniu.pndao.generator.dao.MapperMethod;
 import com.sun.source.util.Trees;
 import com.sun.tools.javac.code.Scope;
 import com.sun.tools.javac.code.Symbol;

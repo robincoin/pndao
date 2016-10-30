@@ -1,4 +1,4 @@
-package com.piaoniu.annotations;
+package com.piaoniu.pndao.annotations;
 
 public @interface DaoGen {
     String[] insertPrefix() default {"insert"};
@@ -25,7 +25,6 @@ public @interface DaoGen {
 
     String[] queryAllPrefix() default {"queryAll"};
 
-    //String[] count() default {"countBy"};
     String separator() default "And";
 
     String tablePrefix() default "PN_";

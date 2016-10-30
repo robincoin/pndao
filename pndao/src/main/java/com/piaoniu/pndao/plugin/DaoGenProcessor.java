@@ -1,11 +1,11 @@
-package com.piaoniu.plugin;
+package com.piaoniu.pndao.plugin;
 
 import com.google.common.collect.ImmutableSet;
-import com.piaoniu.annotations.DaoGen;
-import com.piaoniu.generator.dao.DaoEnv;
-import com.piaoniu.generator.dao.MapperMethod;
-import com.piaoniu.utils.DaoGenHelper;
-import com.piaoniu.utils.ResourceHelper;
+import com.piaoniu.pndao.annotations.DaoGen;
+import com.piaoniu.pndao.generator.dao.DaoEnv;
+import com.piaoniu.pndao.generator.dao.MapperMethod;
+import com.piaoniu.pndao.utils.DaoGenHelper;
+import com.piaoniu.pndao.utils.ResourceHelper;
 import com.sun.source.util.Trees;
 import com.sun.tools.javac.code.Symbol;
 import com.sun.tools.javac.processing.JavacProcessingEnvironment;

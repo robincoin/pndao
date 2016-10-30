@@ -1,4 +1,4 @@
-package com.piaoniu.utils;
+package com.piaoniu.pndao.utils;
 
 public class PrintUtils {
     public static void note(String data){
