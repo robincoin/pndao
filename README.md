@@ -82,7 +82,7 @@ public interface UserDao {
      <tr>
         <td>batchInsert</td>
         <td>批量插入记录</td>
-		 <td>batchInsert(List\<User> user)</td>        
+		 <td>batchInsert(List<User> user)</td>        
         <td>返回插入记录数</td>
     </tr>
     <tr>
