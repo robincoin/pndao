@@ -1,3 +1,0 @@
-* piaoniu-plugin
-
-** dao-gen

@@ -45,4 +45,10 @@ public class UserDaoTest extends AbstractTest{
 		List<User> users = userDao.queryByUserName("票牛用户",new RowBounds(0,1));
 		assertThat(users).isNotEmpty();
 	}
+
+	@Test
+	public void testFindUserNameById() throws Exception {
+		String userName = userDao.findUserNameById(1);
+		assertThat(userName).isEqualTo("票牛用户");
+	}
 }

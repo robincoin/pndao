@@ -32,7 +32,7 @@ public class MyBatisConfig {
 
     @Bean
     public DataSource dataSource() {
-        //TODO:replace by your own datasouce
+        //TODO:just for test, replace by your own datasource
         EmbeddedDatabaseBuilder builder = new EmbeddedDatabaseBuilder();
         EmbeddedDatabase db = builder
                 .setType(EmbeddedDatabaseType.H2) //.H2 or .DERBY
