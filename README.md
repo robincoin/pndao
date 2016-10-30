@@ -57,10 +57,9 @@ public interface UserDao {
 
 ## 使用
 
-pndao包括几部分组成：
-
-1. 一个编译工具，帮助自动生成SQL
-2. 一套实践规范，帮你统一DAO层方法及行为
+1. 如果你正在使用MyBatis，那么只需在Dao上增加@DaoGen注释即可。
+2. pndao会优先使用你自己定义的SQL（包括注解和XML），所以不用担心原有的Dao不能用了。
+3. 在新编写方法时，按照pndao的方法命名规范即可享受代码生成。
 
 使用建议先阅读pndao-example中的样例代码。
 
@@ -110,3 +109,5 @@ pndao包括几部分组成：
         <td>返回更新记录数</td>
     </tr>
 </table>
+
+
