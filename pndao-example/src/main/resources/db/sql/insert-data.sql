@@ -1,1 +1,1 @@
-insert into PN_User (`avatar`, `mobileNo`, `password`, `userName`, `updateTime`, `addTime`) values ('http://git.oschina.net/uploads/group/groups_1087185.png', '13700000000', 'c5658357fd6d0c4a802f95cd96d83c5f', '票牛用户', now(), now())
+insert into PN_User (`avatar`, `mobileNo`, `password`, `userName`, `updateTime`, `addTime`) values ('http://git.oschina.net/uploads/group/groups_1087185.png', '13700000000', 'c5658357fd6d0c4a802f95cd96d83c5f', '用户13700000000', now(), now())

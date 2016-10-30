@@ -4,7 +4,6 @@ import com.piaoniu.common.EntityDao;
 import com.piaoniu.pndao.annotations.DaoGen;
 import com.piaoniu.user.entity.User;
 import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.session.RowBounds;
 
 import java.util.List;
@@ -19,7 +18,6 @@ public interface UserDao extends EntityDao<User> {
 
 	List<User> queryByUserName(@Param("userName") String userName,RowBounds rowBounds);
 
-	@Select("select userName from PN_User where id = #{id}")
-	String findUserNameById(@Param("id") int id);
+	int updateForUserName(@Param("userName") String userName, @Param("id") int id);
 
 }
