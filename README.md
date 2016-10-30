@@ -1,6 +1,6 @@
 pndao
 ====
->一个非常简单的DAO辅助工具，可以基于DAO的命名约定帮你生成并维护SQL语句
+>一个非常简单的MyBatis辅助工具，可以基于DAO的命名约定帮你生成并维护SQL语句
 
 pndao是票牛Java团队实践一年演化出来的工具。在实际生产中减少了80%以上的重复SQL编写工作，从而把关注力转移到模型本身的制定上。结合建表语句生成插件[pngen](http://git.oschina.net/piaoniu/pngen)，大部分场景只需编写一个模型类即可完成DAO层工作。
 
@@ -60,6 +60,7 @@ public interface UserDao {
 1. 如果你正在使用MyBatis，那么只需在Dao上增加@DaoGen注释即可。
 2. pndao会优先使用你自己定义的SQL（包括注解和XML），所以不用担心原有的Dao不能用了。
 3. 在新编写方法时，按照pndao的方法命名规范即可享受代码生成。
+4. 目前只支持Java 8
 
 使用建议先阅读pndao-example中的样例代码。
 
@@ -67,9 +68,9 @@ public interface UserDao {
 
 <table>
     <tr>
-        <td width="100">方法</td>
-        <td width="100">说明</td>
-        <td width="100">样例</td>        
+        <td width="20%">方法</td>
+        <td width="20%">说明</td>
+        <td width="40%">样例</td>        
         <td>备注</td>
     </tr>
     <tr>
