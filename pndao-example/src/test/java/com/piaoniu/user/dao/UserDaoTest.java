@@ -23,11 +23,7 @@ public class UserDaoTest extends AbstractTest{
 	@Ignore("insert语句与h2不兼容")
 	@Test
 	public void testInsertUser() throws Exception {
-		User user = new User();
-		user.setAvatar("http://git.oschina.net/uploads/group/groups_1087185.png");
-		user.setPassword("c5658357fd6d0c4a802f95cd96d83c5f");
-		user.setUserName("用户13700000000");
-		user.setMobileNo("13700000000");
+		User user = initUser();
 		assertThat(userDao.insert(user)).isEqualTo(1);
 	}
 
@@ -40,5 +36,14 @@ public class UserDaoTest extends AbstractTest{
 	@Test
 	public void testUpdateUserName() throws Exception {
 		assertThat(userDao.updateForUserName("用户13700000001",USER_ID)).isEqualTo(1);
+	}
+
+	private User initUser(){
+		User user = new User();
+		user.setAvatar("http://git.oschina.net/uploads/group/groups_1087185.png");
+		user.setPassword("c5658357fd6d0c4a802f95cd96d83c5f");
+		user.setUserName("用户13700000000");
+		user.setMobileNo("13700000000");
+		return user;
 	}
 }
