@@ -76,67 +76,37 @@ pndao包括几部分组成：
     <tr>
         <td>insert</td>
         <td>插入记录</td>
-		 <td>`insert(User user)`</td>        
-        <td>yes</td>
+		 <td>insert(User user)</td>        
+        <td>ID会回写入user的主键</td>
+    </tr>
+     <tr>
+        <td>batchInsert</td>
+        <td>批量插入记录</td>
+		 <td>batchInsert(List<User> user)</td>        
+        <td>返回插入记录数</td>
     </tr>
     <tr>
-        <td>immediate parent</td>
-        <td>/</td>
-        <td>yes</td>
+        <td>findBy</td>
+        <td>按某列查询单个元素</td>
+		 <td>findByUserName(String userName)</td>        
+        <td>返回单条记录</td>
     </tr>
-    <tr>
-        <td>parent</td>
-        <td>//</td>
-        <td>yes</td>
+     <tr>
+        <td>queryBy</td>
+        <td>按某列查询一些元素</td>
+		 <td>queryByUserName(String userName)</td>        
+        <td>返回多条记录</td>
     </tr>
-    <tr>
-        <td>attribute</td>
-        <td>[@key=value]</td>
-        <td>yes</td>
+     <tr>
+        <td>countBy</td>
+        <td>按某列查询总数</td>
+		 <td>countBy(String userName)</td>        
+        <td>返回总数</td>
     </tr>
-    <tr>
-        <td>nth child</td>
-        <td>tag[n]</td>
-        <td>yes</td>
-    </tr>
-    <tr>
-        <td>attribute</td>
-        <td>/@key</td>
-        <td>yes</td>
-    </tr>
-    <tr>
-        <td>wildcard in tagname</td>
-        <td>/*</td>
-        <td>yes</td>
-    </tr>
-    <tr>
-        <td>wildcard in attribute</td>
-        <td>/[@*]</td>
-        <td>yes</td>
-    </tr>
-    <tr>
-        <td>function</td>
-        <td>function()</td>
-        <td>part</td>
-    </tr>
-    <tr>
-        <td>or</td>
-        <td>a | b</td>
-        <td>yes since 0.2.0</td>
-    </tr>
-    <tr>
-        <td>parent in path</td>
-        <td>. or ..</td>
-        <td>no</td>
-    </tr>
-    <tr>
-        <td>predicates</td>
-        <td>price>35</td>
-        <td>no</td>
-    </tr>
-    <tr>
-        <td>predicates logic</td>
-        <td>@class=a or @class=b</td>
-        <td>yes since 0.2.0</td>
+     <tr>
+        <td>updateFor</td>
+        <td>按照主键更新一列</td>
+		 <td>updateForUserName(String userName,int id)</td>        
+        <td>返回更新记录数</td>
     </tr>
 </table>
