@@ -1,6 +1,6 @@
 package com.piaoniu.user.entity;
 
-import com.piaoniu.common.entity.Entity;
+import com.piaoniu.common.Entity;
 import lombok.Data;
 
 /**

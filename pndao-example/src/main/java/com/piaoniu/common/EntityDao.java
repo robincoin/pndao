@@ -1,6 +1,5 @@
-package com.piaoniu.common.dao;
+package com.piaoniu.common;
 
-import com.piaoniu.common.entity.Entity;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.session.RowBounds;
 

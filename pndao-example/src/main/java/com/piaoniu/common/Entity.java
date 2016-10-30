@@ -1,4 +1,4 @@
-package com.piaoniu.common.entity;
+package com.piaoniu.common;
 
 import lombok.Data;
 import lombok.ToString;

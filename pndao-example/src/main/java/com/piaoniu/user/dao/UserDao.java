@@ -1,6 +1,6 @@
 package com.piaoniu.user.dao;
 
-import com.piaoniu.common.dao.EntityDao;
+import com.piaoniu.common.EntityDao;
 import com.piaoniu.pndao.annotations.DaoGen;
 import com.piaoniu.user.entity.User;
 import org.apache.ibatis.annotations.Param;
