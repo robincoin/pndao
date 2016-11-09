@@ -60,7 +60,7 @@ public interface UserDao {
 #### 1. 引入pndao依赖
 
 ```xml
-    <artifactId>pndao-parent</artifactId>
+    <artifactId>pndao</artifactId>
         <groupId>com.piaoniu</groupId>
         <version>0.2.0</version>
 ```
