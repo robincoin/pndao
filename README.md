@@ -57,11 +57,18 @@ public interface UserDao {
 
 ## 使用
 
-1. 引入pndao依赖
-2. 如果你正在使用MyBatis，那么只需在Dao上增加@DaoGen注释即可。
-3. pndao会优先使用你自己定义的SQL（包括注解和XML），所以不用担心原有的Dao不能用了。
-4. 在新编写方法时，按照pndao的方法命名规范即可享受代码生成。
-5. 目前只支持Java 8
+#### 1. 引入pndao依赖
+
+```xml
+    <artifactId>pndao-parent</artifactId>
+        <groupId>com.piaoniu</groupId>
+        <version>0.2.0</version>
+```
+
+#### 2. 如果你正在使用MyBatis，那么只需在Dao上增加@DaoGen注释即可。
+#### 3. pndao会优先使用你自己定义的SQL（包括注解和XML），所以不用担心原有的Dao不能用了。
+#### 4. 在新编写方法时，按照pndao的方法命名规范即可享受代码生成。
+#### 5. 目前只支持Java 8
 
 使用前建议先阅读[pndao-example](http://git.oschina.net/piaoniu/pndao/tree/master/pndao-example)中的样例代码。
 
